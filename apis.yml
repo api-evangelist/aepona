@@ -1,21 +1,50 @@
 aid: aepona
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aepona.png
 name: Aepona
-description: 'Aepona is a company surfaced as a portfolio company of sapphire-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: infrastructure. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Aepona was a telecommunications software company founded in 1999 and headquartered
+  in Belfast, Northern Ireland, with additional offices in Dublin, the United States, and Sri
+  Lanka. Its Network-as-a-Service platform let mobile network operators and cloud service providers
+  expose carrier network capabilities — messaging, voice, location, identity, and carrier billing
+  — to third-party developers through common-language REST APIs, and merchandize them through
+  multi-sided business models. Backed by Amadeus Capital Partners and Sapphire Ventures, Aepona
+  was acquired by Intel in April 2013 for approximately $124 million and folded into Intel''s
+  software and services group alongside the Mashery API-management acquisition. The company is
+  no longer operating independently and its developer surface is defunct; this profile is retained
+  as a historical record within the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/aepona/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - sapphire-ventures
+- amadeus-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct-acquired
+x-acquired-by: intel
+x-acquired-date: '2013-04-28'
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
 - Infrastructure
+- Telecommunications
+- APIs
+- Network as a Service
+- API Monetization
+- Mobile
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aepona-domain-security.yml
 - type: Website
   url: https://www.aepona.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
